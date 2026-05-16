@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Left to Right Animation</title>
+
+    <style>
+        .body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            align-items:center;
+            background:#f0f0f0;
+            overflow:hidden;
+        }
+
+        .box{
+            width:120px;
+            height:120px;
+            background:blue;
+            position:relative;
+            align-self: center;
+            animation:moveBox 1s infinite alternate;
+        
+        }
+        .box2{
+              width:120px;
+            height:120px;
+            background:rgb(226, 9, 110);
+            
+            position:relative;
+            align-self: center;
+
+            animation:moveBox2 1s infinite alternate;
+        }
+
+        @keyframes moveBox {
+            from{
+                left:0;
+            }
+
+            to{
+                left: 200px;
+            }
+        }
+         @keyframes moveBox2 {
+            from{
+                right: 0px;;
+            }
+
+            to{
+                right: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+    <div class="box2"></div>
+
+</body>
+</html>

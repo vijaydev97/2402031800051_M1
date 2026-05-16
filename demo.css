@@ -1,0 +1,23 @@
+#paral{
+    color: aqua;
+    font-size: larger;
+  
+}
+.dax{
+    text-align: center;
+    color: aqua;
+    font-size: larger;
+  
+}
+body
+{
+    background-image:url(../../Downloads/13655.jpg);
+    background-repeat: no-repeat;
+    background: size 100%; ;
+}
+.box{
+    color: azure;
+    content: icon;
+    margin: 100px;
+    background-image: url(../../Downloads/lofi-datsun-240z-palm-trees-retro-sunset-desktop-wallpaper-cover.jpg);
+}
