@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var total = 0;
+        var average;
+        for(var i=0;i<=5;i++){
+            var mark = prompt("enter your marks for subject"+(i+1)+":");
+            total += parseInt(mark);
+        }
+        average = total/5;
+        document.write("Total mark:"+ total);
+        document.write("<br>");
+        document.write("Average marks:"+average);
+
+    </script>
+</body>
+</html>
