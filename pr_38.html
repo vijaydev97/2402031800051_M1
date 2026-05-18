@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Bill</title>
+</head>
+<body>
+ <table border="2" >
+    <tr>
+        <td>
+    Select Product :
+    <select id="product">
+        <option >--select option--</option>
+        <option value="45555">AC</option>
+        <option value="22000">TV</option>
+        <option value="6455">Refrigerator</option>
+        <option value="20055">Laptop</option>
+    </select>
+        </td>
+    </tr>
+
+    <br><br>
+    <tr>
+    <td>
+    Net Price :
+    <input type="text" id="price">
+    </td>
+    </tr>
+    <br><br>
+    <tr>
+        <td>
+    Quantity :
+    <input type="number" id="quantity">
+        </td>
+    </tr>
+    <br><br>
+    <tr>
+        <td>
+    Total Amount :
+    <input type="text" id="amount">
+        </td>
+    </tr>
+ </table>
+    <script>
+
+        var product = document.getElementById("product");
+        var quantity = document.getElementById("quantity");
+        var amount = document.getElementById("amount");
+        var price = document.getElementById("price");
+
+       
+        product.addEventListener("change", () => {
+            price.value = product.value;
+        });
+
+        
+        quantity.addEventListener("input", () => {
+            amount.value = Number(product.value) * Number(quantity.value);
+        });
+
+    </script>
+
+</body>
+</html>
