@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <h1 class="head">student details</h1>
+  </head>
+  <body>
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.slim.js"
+        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+        crossorigin="anonymous"
+    ></script>
+    <script>
+        $(document).ready(function () { 
+        
+
+        $("#t1").click(function () {
+            $("#tt1").toggle();
+            $("#tt1").css('background-color','pink')
+        });
+          $("#t2").click(function () {
+            $("#tt2").toggle();
+            $("#tt2").css('background-color','lightblue')
+        });
+          $("#t3").click(function () {
+            $("#tt3").toggle();
+            $("#tt3").css('background-color','lightyellow')
+        });
+        });
+    </script>
+    
+
+    <table border="5" class="table">
+
+        <tr>
+      <td id="t1">
+        <p>
+            <h1>DAX THALESHA</h1>
+        </p>
+      </td>
+      <td id="tt1" style="display: none;" rowspan="3">
+        <p>
+            <h1>
+            <ul><li>city:ahemdabad</li>
+                <li>collge:silver oak</li>
+                <li>cgpa:9.9</li>
+                </ul>
+        </h1>
+        </p>
+      </td>
+      </tr>
+      <tr>
+      <td id="t2">
+        <p>
+            <h1>DEV GEDIYA</h1>
+        </p>
+      </td>
+      <td id="tt2" style="display: none;" rowspan="3">
+        <p>
+            <h1>
+            <ul><li>city:rajkot</li>
+                <li>collge:marvadi collge</li>
+                <li>cgpa:10</li>
+                </ul>
+        </h1>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td id="t3">
+        <p>
+            <h1>ROMIL DOBARIYA</h1>
+        </p>
+      </td>
+        <td id="tt3" style="display: none;" rowspan="3">
+        <p>
+            <h1>
+            <ul><li>city:ahemdabad</li>
+                <li>collge:nirma university</li>
+                <li>cgpa:11</li>
+                </ul>
+        </h1>
+        </p>
+      </td>
+      </tr>
+      
+    </table>
+    <style>
+        .table{
+        
+        text-align: left;
+        font-size: medium;
+        border: 5px solid black;
+        text-align: left;
+
+        
+        margin-right: auto;
+        margin-left: auto;
+    }
+        .head{
+            text-align: center;
+            
+        }
+
+        
+    </style>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    </head>
+    <body>
+    <h4>
+        Age
+        <input id="xyz" type="text" placeholder="enter your age" />
+        <button id="btn">write</button>
+        <span id="msg"></span>
+    </h4>
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.slim.js"
+        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+        crossorigin="anonymous"
+    ></script>
+    <script>
+        $(document).ready(function () {
+        $("#btn").click(function () {
+            var xyz = $("#xyz").val();
+        $("#msg").text(xyz);
+            $("#msg").html("<b>your age is :</b>" + xyz);
+        });
+        });
+
+        $(document).ready(function () {
+        $("#p1").css("color", "red");
+        $("#p1").css("background-color", "yellow");
+        });
+    </script>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fadein">Fade In</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadetoggle">Fade Toggle</button>
+
+    <script>
+    $(document).ready(function () {
+        alert("");
+    });
+    </script>
+
+    <p id="p1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit cupiditate
+        dolore culpa veniam delectus molestias sed neque! Reiciendis veritatis
+        itaque modi sequi. Accusamus officia, necessitatibus explicabo iure
+        sapiente magnam voluptatem, tenetur blanditiis facilis reiciendis numquam.
+        Est porro, distinctio corporis similique ab ducimus obcaecati, possimus
+        asperiores accusantium adipisci, ut mollitia iure eaque consectetur sint
+        perspiciatis voluptate debitis explicabo. Fuga nisi soluta voluptas
+        aspernatur velit aliquam? Quas voluptatibus quasi fugit dignissimos enim
+        corrupti cumque quibusdam explicabo, facere, numquam reiciendis deleniti
+        praesentium nulla excepturi unde minima perferendis. Eum consectetur odio
+        architecto soluta. Nisi beatae blanditiis veniam neque. Explicabo, quos!
+        A ccusantium laborum quae possimus!
+    </p>
+
+    <script>
+        $(document).ready(function () {
+        $("#hide").click(function () {
+            $("#p1").hide();
+        });
+
+        $("#show").click(function () {
+            $("#p1").show();
+        });
+
+        $("#toggle").click(function () {
+            $("#p1").toggle();
+        });
+        });
+    </script>
+
+    <p id="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe
+        architecto dolorum est explicabo, dolores tenetur inventore fugit
+        molestias, corporis quae distinctio et ullam? Non expedita minima soluta
+        aut accusantium voluptatum corporis asperiores doloribus ipsa quibusdam
+        neque, nihil nisi deleniti, et sapiente nam ut itaque aspernatur. Neque
+        adipisci ipsam aliquam distinctio! Omnis a dolore necessitatibus quod
+        possimus perspiciatis. Voluptatibus, nisi dolore? Totam dignissimos, iusto
+        aut sunt sapiente itaque repellendus et cumque obcaecati rem praesentium
+        illo atque reiciendis fugiat debitis harum consequuntur id illum porro.
+        Est voluptatem enim accusamus id ex quibusdam ut odio similique vel?
+        Laudantium laboriosam assumenda fugiat. Expedita.
+    </p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+        $("#fadein").click(function () {
+            $("#p2").fadeIn(1000);
+        });
+
+        $("#fadeout").click(function () {
+            $("#p2").fadeOut(1000);
+        });
+
+        $("#fadetoggle").click(function () {
+            $("#p2").fadeToggle(1000);
+        });
+        });
+    </script>
+    <p id="p3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo eum ab
+        omnis ea placeat veritatis iure deleniti incidunt est temporibus facere,
+        pariatur illum debitis exercitationem earum. In fuga cum quis iste natus
+        doloremque nesciunt quae assumenda, repellat officiis corporis voluptas
+        error ipsum magni id eius quaerat. Rerum voluptate maiores doloremque
+        cupiditate quibusdam in assumenda quia nulla magni necessitatibus ullam
+        do loribus delectus incidunt, consequuntur, amet aliquid alias, modi
+        impedit recusandae voluptatem. Iste eveniet laborum, eum voluptatum
+        laudantium facere quod ratione ducimus vero suscipit voluptatem sequi
+        consequatur adipisci earum reprehenderit quas, expedita reiciendis magni!
+        Provident voluptatum velit ea, nulla quos iure voluptates.
+    </p>
+    <p id="p4">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam nisi atque
+        ut corporis ipsum architecto numquam, doloremque omnis eveniet ea dolorum?
+        Maxime magni temporibus doloribus excepturi. Animi a ipsam dolores sit
+        nemo unde accusamus eaque amet nihil? Blanditiis quis, quasi, dolor
+        adipisci explicabo libero velit error incidunt tenetur reiciendis
+        quibusdam consequuntur perspiciatis nisi ipsam magni esse voluptas? Non
+        sint neque minus repudiandae voluptatem quas itaque, ad nemo reiciendis
+        cum aliquam vel fugiat tempore doloremque delectus assumenda omnis facilis
+        nisi accusantium suscipit veniam? Labo re nisi, laboriosam libero dicta et
+        repudiandae similique fuga ab non inventore consequuntur aliquid voluptas
+        e xercitationem excepturi cumque.
+    </p>
+    <p id="p5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+        repudiandae assumenda. Incidunt enim dolores distinctio unde, labore nulla
+        excepturi, hic nesciunt dolore consectetur ut doloribus ea maiores odio
+        officiis? Ex unde nam, nostrum eveniet natus ratione illo aperiam vel fuga
+        doloribus, accusamus omnis beatae maxime consequuntur nesciunt culpa
+        harum. Voluptas ducimus neque aperiam animi delectus blanditiis debitis
+        dignissimos eos repellendus rem numquam rerum, quasi esse quos, cumque cum
+        et earum amet quod modi placeat sequi molestiae sint odit. Sed iste
+        pe rspiciatis maxime deleniti, accusamus provident itaque architecto iure
+        modi odit dolor cumque cum possimus illo commodi ipsum veritatis in quae?
+    </p>
+    </body>
+</html>
