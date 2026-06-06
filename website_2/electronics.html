@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+    <title>Flipkart Clone</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#f1f3f6;
+        }
+
+        .navbar{
+            background:#2874f0;
+            color:white;
+            padding:15px;
+            display:flex;
+            justify-content:space-between;
+        }
+
+        .products{
+            display:flex;
+            gap:20px;
+            padding:20px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            width:220px;
+            padding:15px;
+            border-radius:10px;
+            text-align:center;
+            box-shadow:0 0 10px gray;
+        }
+
+        button{
+            background:#2874f0;
+            color:white;
+            border:none;
+            padding:10px;
+            cursor:pointer;
+        }
+
+        a{
+            color:white;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Flipkart</h2>
+    <a href="cart.html">
+        Cart (<span id="count">0</span>)
+    </a>
+</div>
+
+<div class="products">
+
+    <div class="card">
+        <h3>Laptop</h3>
+        <p>₹29999</p>
+        <button onclick="addToCart(1,'Laptop',29999)">
+            Add To Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Smart TV</h3>
+        <p>₹14999</p>
+        <button onclick="addToCart(2,'Smart TV',14999)">
+            Add To Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Air Conditioner</h3>
+        <p>₹24999</p>
+        <button onclick="addToCart(3,'Air Conditioner',24999)">
+            Add To Cart
+        </button>
+    </div>
+
+</div>
+
+<script>
+
+function addToCart(id,name,price){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let item = cart.find(product => product.id === id);
+
+    if(item){
+        item.quantity++;
+    }
+    else{
+        cart.push({
+            id:id,
+            name:name,
+            price:price,
+            quantity:1
+        });
+    }
+
+    localStorage.setItem("cart",JSON.stringify(cart));
+
+    updateCount();
+
+    alert("Added To Cart");
+}
+
+function updateCount(){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let totalItems = 0;
+
+    cart.forEach(item=>{
+        totalItems += item.quantity;
+    });
+
+    document.getElementById("count").innerText = totalItems;
+}
+
+updateCount();
+
+</script>
+
+</body>
+</html>
