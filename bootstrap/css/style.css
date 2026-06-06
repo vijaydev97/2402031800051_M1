@@ -1,0 +1,9 @@
+.container{
+    border: 8px solid black;
+}
+.row{
+    border: 8px solid red;
+}
+.col{
+    border: 8px solid gold;
+}
